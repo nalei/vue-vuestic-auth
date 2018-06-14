@@ -1,0 +1,62 @@
+.__vev_calendar-wrapper {
+  .cal-wrapper {
+    .cal-header {
+      .title {
+        font-size: 2rem;
+      }
+    }
+    box-shadow: 0px 0px 35px 9px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 35px 35px;
+    width: 40% ;
+    .cal-body {
+      .weeks {
+        span.item {
+          color: $theme-violet;
+        }
+      }
+      .dates {
+        .item.event {
+          p.date-num {
+            color: white !important;
+          }
+          span.is-event {
+            border-color: $theme-violet !important;
+            border-width: 18px !important;
+          }
+        }
+        .item.today {
+          p.date-num {
+          }
+          span.is-today {
+            background: $theme-violet !important;
+            width: 9px;
+            height: 9px;
+            opacity: 1;
+            left: 55%;
+          }
+        }
+      }
+    }
+  }
+  .events-wrapper {
+    background-color: transparent !important;
+    h2.date {
+      background: none;
+      color: black;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .__vev_calendar-wrapper .cal-wrapper {
+      padding: 2rem !important;
+      width: 40% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .__vev_calendar-wrapper .cal-wrapper {
+      margin: auto;
+      width: 82% !important;
+  }
+}
